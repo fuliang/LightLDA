@@ -1,4 +1,4 @@
-#LightLDA
+# LightLDA
 
 LightLDA is a distributed system for large scale topic modeling. It implements a distributed sampler that enables very large data sizes and models. LightLDA improves sampling throughput and convergence speed via a fast O(1) metropolis-Hastings algorithm, and allows small cluster to tackle very large data and model sizes through model scheduling and data parallelism architecture. LightLDA is implemented with C++ for performance consideration.
 
@@ -6,7 +6,7 @@ We have sucessfully trained big topic models (with trillions of parameters) on b
 
 For documents, please view our website [http://www.dmtk.io](http://www.dmtk.io).
 
-##Why LightLDA
+## Why LightLDA
 
 The highlight features of LightLDA are
 
@@ -14,13 +14,13 @@ The highlight features of LightLDA are
 * **Fast**: The sampler can sample millions of tokens per second per multi-core node.
 * **Lightweight**: Such big tasks can be trained with as few as tens of machines.
 
-##Quick Start
+## Quick Start
 
 Run ``` $ sh build.sh ``` to build lightlda.
 Run ``` $ sh example/nytimes.sh ``` for a simple example.
 
 
-##Reference
+## Reference
 
 Please cite LightLDA if it helps in your research:
 
@@ -34,6 +34,8 @@ Please cite LightLDA if it helps in your research:
   organization={International World Wide Web Conferences Steering Committee}
 }
 ```
+## Notice
+Change the zeromq download url to https://github.com/zeromq/zeromq4-1/releases/download/v4.1.3/zeromq-4.1.3.tar.gz
 
 Microsoft Open Source Code of Conduct
 ------------
